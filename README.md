@@ -10,3 +10,5 @@ Network on chip or network on a chip (NoC) is a communication subsystem on an in
 
 Network on chip  is an  emerging paradigm for communications within large VLSI systems implemented on a single Silicon Chip. A NOC is constructed from multiple point-point data links interconnected by switches, such that messages can be relayed from any source module to any destination module over several links, by making routing decisions at the switches.
 
+The BookSim simulator used in the code is forked from https://github.com/booksim/booksim2
+
