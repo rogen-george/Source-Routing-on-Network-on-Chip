@@ -1,0 +1,64 @@
+make
+echo "uniform";
+./booksim examples/mesh44 traffic=uniform injection_rate=0.4
+./booksim examples/mesh44 traffic=uniform injection_rate=0.42
+./booksim examples/mesh44 traffic=uniform injection_rate=0.45
+./booksim examples/mesh44 traffic=uniform injection_rate=0.47
+./booksim examples/mesh44 traffic=uniform injection_rate=0.5
+./booksim examples/mesh44 traffic=uniform injection_rate=0.52
+./booksim examples/mesh44 traffic=uniform injection_rate=0.53
+./booksim examples/mesh44 traffic=uniform injection_rate=0.54
+./booksim examples/mesh44 traffic=uniform injection_rate=0.55
+echo "transpose";
+./booksim examples/mesh44 traffic=transpose injection_rate=0.35
+./booksim examples/mesh44 traffic=transpose injection_rate=0.37
+./booksim examples/mesh44 traffic=transpose injection_rate=0.4
+./booksim examples/mesh44 traffic=transpose injection_rate=0.42
+./booksim examples/mesh44 traffic=transpose injection_rate=0.43
+./booksim examples/mesh44 traffic=transpose injection_rate=0.44
+./booksim examples/mesh44 traffic=transpose injection_rate=0.45
+./booksim examples/mesh44 traffic=transpose injection_rate=0.46
+echo "tornado";
+./booksim examples/mesh44 traffic=tornado injection_rate=0.4
+./booksim examples/mesh44 traffic=tornado injection_rate=0.42
+./booksim examples/mesh44 traffic=tornado injection_rate=0.45
+./booksim examples/mesh44 traffic=tornado injection_rate=0.47
+./booksim examples/mesh44 traffic=tornado injection_rate=0.5
+./booksim examples/mesh44 traffic=tornado injection_rate=0.51
+./booksim examples/mesh44 traffic=tornado injection_rate=0.52
+./booksim examples/mesh44 traffic=tornado injection_rate=0.53
+./booksim examples/mesh44 traffic=tornado injection_rate=0.54
+./booksim examples/mesh44 traffic=tornado injection_rate=0.55
+echo "bitcomp";
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.12
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.14
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.16
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.18
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.2
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.21
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.22
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.225
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.23
+echo "bitrev";
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.32
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.34
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.36
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.38
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.4
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.41
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.41
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.43
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.44
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.45
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.46
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.47
+echo "shuffle";
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.4
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.42
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.45
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.47
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.48
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.5
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.52
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.54
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.55

@@ -1,0 +1,43 @@
+echo "LUF-UN";
+./booksim examples/mesh44 traffic=uniform injection_rate=0.22
+./booksim examples/mesh44 traffic=uniform injection_rate=0.30
+./booksim examples/mesh44 traffic=uniform injection_rate=0.34
+./booksim examples/mesh44 traffic=uniform injection_rate=0.35
+./booksim examples/mesh44 traffic=uniform injection_rate=0.36
+echo "LUF-TR";
+./booksim examples/mesh44 traffic=transpose injection_rate=0.24
+./booksim examples/mesh44 traffic=transpose injection_rate=0.27
+./booksim examples/mesh44 traffic=transpose injection_rate=0.30
+./booksim examples/mesh44 traffic=transpose injection_rate=0.31
+./booksim examples/mesh44 traffic=transpose injection_rate=0.32
+echo "LUF-TO";
+./booksim examples/mesh44 traffic=tornado injection_rate=0.26
+./booksim examples/mesh44 traffic=tornado injection_rate=0.32
+./booksim examples/mesh44 traffic=tornado injection_rate=0.35
+./booksim examples/mesh44 traffic=tornado injection_rate=0.36
+./booksim examples/mesh44 traffic=tornado injection_rate=0.37
+echo "LUF-BC";
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.10
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.13
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.15
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.16
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.17
+echo "LUF-BR";
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.26
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.28
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.29
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.30
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.31
+echo "LUF-SH";
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.28
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.32
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.35
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.36
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.37
+echo "Overall average latency-END\n";
+
+
+
+
+
+

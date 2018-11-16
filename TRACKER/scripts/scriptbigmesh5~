@@ -1,0 +1,28 @@
+echo "Overall average latency -uniform\n";
+./booksim examples/mesh44 traffic=uniform injection_rate=0.24
+./booksim examples/mesh44 traffic=uniform injection_rate=0.25
+./booksim examples/mesh44 traffic=uniform injection_rate=0.26
+./booksim examples/mesh44 traffic=uniform injection_rate=0.27
+./booksim examples/mesh44 traffic=uniform injection_rate=0.28
+./booksim examples/mesh44 traffic=uniform injection_rate=0.29
+./booksim examples/mesh44 traffic=uniform injection_rate=0.30
+./booksim examples/mesh44 traffic=uniform injection_rate=0.31
+./booksim examples/mesh44 traffic=uniform injection_rate=0.32
+echo "Overall average latency -tornado\n";
+./booksim examples/mesh44 traffic=tornado injection_rate=0.30
+./booksim examples/mesh44 traffic=tornado injection_rate=0.31
+./booksim examples/mesh44 traffic=tornado injection_rate=0.32
+./booksim examples/mesh44 traffic=tornado injection_rate=0.33
+./booksim examples/mesh44 traffic=tornado injection_rate=0.34
+./booksim examples/mesh44 traffic=tornado injection_rate=0.35
+./booksim examples/mesh44 traffic=tornado injection_rate=0.36
+./booksim examples/mesh44 traffic=tornado injection_rate=0.37
+./booksim examples/mesh44 traffic=tornado injection_rate=0.38
+./booksim examples/mesh44 traffic=tornado injection_rate=0.39
+echo "Overall average latency-END\n";
+
+
+
+
+
+

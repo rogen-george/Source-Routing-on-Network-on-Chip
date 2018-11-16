@@ -1,0 +1,22 @@
+custom messages
+**************************
+
+cout<<"came back from config file"<<endl;   // added John
+
+cout<<"mode is "<<gGUIMode;  // added John
+
+cout<<"#@#@#@#@#@#@#@#@#@#@"<<endl; // added John
+
+cout <<"InitializeRoutingMap"<<endl; // added John
+
+cout<<"routemap initialized...."<<endl; // added John
+
+cout<<"trafficmap initialized...."<<endl; // added John
+
+cout<<"$$$"<<endl;  // added John
+
+cout<<"***"<<endl;  // added John
+
+cout<<"$$$**"<<endl;  // added John
+
+cout<<"entered %%%"<<endl; // added John

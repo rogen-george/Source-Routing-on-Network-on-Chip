@@ -1,0 +1,9 @@
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.18
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.19
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.20
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.21
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.22
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.23
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.24
+
+

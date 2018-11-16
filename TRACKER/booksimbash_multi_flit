@@ -1,0 +1,73 @@
+make
+echo "uniform";
+./booksim examples/mesh44 traffic=uniform injection_rate=0.24
+./booksim examples/mesh44 traffic=uniform injection_rate=0.25
+./booksim examples/mesh44 traffic=uniform injection_rate=0.26
+./booksim examples/mesh44 traffic=uniform injection_rate=0.27
+./booksim examples/mesh44 traffic=uniform injection_rate=0.28
+./booksim examples/mesh44 traffic=uniform injection_rate=0.29
+./booksim examples/mesh44 traffic=uniform injection_rate=0.3
+./booksim examples/mesh44 traffic=uniform injection_rate=0.31
+./booksim examples/mesh44 traffic=uniform injection_rate=0.32
+./booksim examples/mesh44 traffic=uniform injection_rate=0.33
+./booksim examples/mesh44 traffic=uniform injection_rate=0.34
+echo "transpose";
+./booksim examples/mesh44 traffic=transpose injection_rate=0.22
+./booksim examples/mesh44 traffic=transpose injection_rate=0.23
+./booksim examples/mesh44 traffic=transpose injection_rate=0.24
+./booksim examples/mesh44 traffic=transpose injection_rate=0.25
+./booksim examples/mesh44 traffic=transpose injection_rate=0.26
+./booksim examples/mesh44 traffic=transpose injection_rate=0.27
+./booksim examples/mesh44 traffic=transpose injection_rate=0.28
+./booksim examples/mesh44 traffic=transpose injection_rate=0.29
+./booksim examples/mesh44 traffic=transpose injection_rate=0.30
+./booksim examples/mesh44 traffic=transpose injection_rate=0.31
+./booksim examples/mesh44 traffic=transpose injection_rate=0.32
+echo "tornado";
+./booksim examples/mesh44 traffic=tornado injection_rate=0.26
+./booksim examples/mesh44 traffic=tornado injection_rate=0.27
+./booksim examples/mesh44 traffic=tornado injection_rate=0.28
+./booksim examples/mesh44 traffic=tornado injection_rate=0.29
+./booksim examples/mesh44 traffic=tornado injection_rate=0.30
+./booksim examples/mesh44 traffic=tornado injection_rate=0.31
+./booksim examples/mesh44 traffic=tornado injection_rate=0.32
+./booksim examples/mesh44 traffic=tornado injection_rate=0.33
+./booksim examples/mesh44 traffic=tornado injection_rate=0.34
+./booksim examples/mesh44 traffic=tornado injection_rate=0.35
+./booksim examples/mesh44 traffic=tornado injection_rate=0.36
+echo "bitcomp";
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.07
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.08
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.09
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.10
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.11
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.12
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.13
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.14
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.15
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.16
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.17
+echo "bitrev";
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.23
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.24
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.25
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.26
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.27
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.28
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.29
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.30
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.31
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.32
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.33
+echo "shuffle";
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.26
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.27
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.28
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.29
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.30
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.31
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.32
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.33
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.34
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.35
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.36

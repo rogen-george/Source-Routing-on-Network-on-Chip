@@ -1,0 +1,16 @@
+echo "LUF-UN";
+./booksim examples/mesh44 traffic=uniform injection_rate=0.28
+./booksim examples/mesh44 traffic=uniform injection_rate=0.30
+./booksim examples/mesh44 traffic=uniform injection_rate=0.32
+./booksim examples/mesh44 traffic=uniform injection_rate=0.33
+./booksim examples/mesh44 traffic=uniform injection_rate=0.34
+echo "LUF-TO";
+./booksim examples/mesh44 traffic=tornado injection_rate=0.34
+./booksim examples/mesh44 traffic=tornado injection_rate=0.36
+./booksim examples/mesh44 traffic=tornado injection_rate=0.38
+./booksim examples/mesh44 traffic=tornado injection_rate=0.40
+
+
+
+
+

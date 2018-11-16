@@ -1,0 +1,11 @@
+flitas=1;
+flitbs=2;
+flitcs=3;
+flitds=4;
+
+//no of different flit sizes
+//=> 60% of the total packets are of size one flit 
+flitac=60;	
+flitbc=15;
+flitcc=15;
+flitdc=10;

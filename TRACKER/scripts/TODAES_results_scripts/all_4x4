@@ -1,0 +1,86 @@
+make
+clear
+echo "Overall average latency -uniform\n";
+echo "LUF-uniform\n"
+echo "Overall average accepted rate-uniform\n"
+./booksim examples/mesh44 traffic=uniform injection_rate=0.26
+./booksim examples/mesh44 traffic=uniform injection_rate=0.28
+./booksim examples/mesh44 traffic=uniform injection_rate=0.30
+./booksim examples/mesh44 traffic=uniform injection_rate=0.31
+./booksim examples/mesh44 traffic=uniform injection_rate=0.32
+./booksim examples/mesh44 traffic=uniform injection_rate=0.33
+./booksim examples/mesh44 traffic=uniform injection_rate=0.34
+./booksim examples/mesh44 traffic=uniform injection_rate=0.35
+./booksim examples/mesh44 traffic=uniform injection_rate=0.36
+echo "Overall average latency -transpose\n";
+echo "LUF-transpose\n"
+echo "Overall average accepted rate  -transpose\n"
+./booksim examples/mesh44 traffic=transpose injection_rate=0.25
+./booksim examples/mesh44 traffic=transpose injection_rate=0.26
+./booksim examples/mesh44 traffic=transpose injection_rate=0.27
+./booksim examples/mesh44 traffic=transpose injection_rate=0.28
+./booksim examples/mesh44 traffic=transpose injection_rate=0.29
+./booksim examples/mesh44 traffic=transpose injection_rate=0.30
+./booksim examples/mesh44 traffic=transpose injection_rate=0.31
+echo "Overall average latency -tornado\n";
+echo "LUF-tornado\n"
+echo "Overall average accepted rate  -tornado\n"
+./booksim examples/mesh44 traffic=tornado injection_rate=0.26
+./booksim examples/mesh44 traffic=tornado injection_rate=0.28
+./booksim examples/mesh44 traffic=tornado injection_rate=0.30
+./booksim examples/mesh44 traffic=tornado injection_rate=0.31
+./booksim examples/mesh44 traffic=tornado injection_rate=0.32
+./booksim examples/mesh44 traffic=tornado injection_rate=0.33
+./booksim examples/mesh44 traffic=tornado injection_rate=0.34
+./booksim examples/mesh44 traffic=tornado injection_rate=0.35
+./booksim examples/mesh44 traffic=tornado injection_rate=0.36
+./booksim examples/mesh44 traffic=tornado injection_rate=0.37
+echo "Overall average latency -bitcomp\n";
+echo "LUF-bitcomp\n"
+echo "Overall average accepted rate  -bitcomp\n"
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.11
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.12
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.13
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.14
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.15
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.16
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.17
+echo "Overall average latency-bitrev\n";
+echo "LUF-bitrev\n"
+echo "Overall average accepted rate  -bitrev\n"
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.26
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.28
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.29
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.30
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.31
+echo "Overall average latency-shuffle\n";
+echo "LUF-shuffle\n"
+echo "Overall average accepted rate  -shuffle\n"
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.28
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.3
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.32
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.34
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.35
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.36
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.37
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.38
+echo "Overall average latency-random-hotspot\n";
+echo "LUF-random-hotspot\\n"
+echo "Overall average accepted rate  -random-hotspot\\n"
+./booksim examples/mesh44 traffic=hotspot injection_rate=0.16
+./booksim examples/mesh44 traffic=hotspot injection_rate=0.17
+./booksim examples/mesh44 traffic=hotspot injection_rate=0.18
+./booksim examples/mesh44 traffic=hotspot injection_rate=0.19
+./booksim examples/mesh44 traffic=hotspot injection_rate=0.20
+./booksim examples/mesh44 traffic=hotspot injection_rate=0.21
+./booksim examples/mesh44 traffic=hotspot injection_rate=0.22
+./booksim examples/mesh44 traffic=hotspot injection_rate=0.23
+echo "Overall average latency-END\n";
+echo "LUF -END\n"
+echo "Overall average accepted rate  -END\n"
+
+
+
+
+
+

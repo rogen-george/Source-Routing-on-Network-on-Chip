@@ -1,0 +1,1376 @@
+Overall average latency -uniform
+
+track file opened succesfullystatistics file opened succesfully.........................$$ Simulation Output $$.......................
+param0   channel_file%%%
+param1   trace_file%%%trace-file.txt
+param2   topology%%%torus
+param3   routing_function%%%none
+param4   router%%%iq
+param5   filter_spec_grants%%%confl_nonspec_gnts
+param6   vc_allocator%%%islip
+param7   sw_allocator%%%islip
+param8   vc_alloc_arb_type%%%round_robin
+param9   sw_alloc_arb_type%%%round_robin
+param10   traffic%%%uniform
+param11   injection_process%%%bernoulli
+param12   priority%%%none
+param13   sim_type%%%latency
+param14   watch_file%%%
+param15   watch_out%%%
+param16   stats_out%%%
+param17   flow_out%%%
+param18   power_output_file%%%pwr_tmp
+param19   tech_file%%%../utils/temp
+param20   network_file%%%
+Default values succesfully loaded
+returned from default config value setting to main ()
+Configuration file : examples/mesh44
+######..Parsing config file ....##########
+param21 S topology = mesh
+param22 I  k = 4
+param23 I  n = 2
+param24 S routing_function = oddeven_modified
+param25 I  num_vcs = 4
+param26 I  vc_buf_size = 3
+param27 I  wait_for_tail_credit = 1
+param28 S vc_allocator = select
+param29 S sw_allocator = select
+param30 I  alloc_iters = 1
+param31 I  credit_delay = 1
+param32 I  routing_delay = 1
+param33 I  vc_alloc_delay = 1
+param34 I  input_speedup = 1
+param35 I  output_speedup = 1
+param36 F  internal_speedup = 1
+param37 S traffic = uniform
+param38 I  flitas = 1
+param39 I  flitbs = 2
+param40 I  flitcs = 3
+param41 I  flitds = 4
+param42 I  flitac = 60
+param43 I  flitbc = 15
+param44 I  flitcc = 15
+param45 I  flitdc = 10
+param46 S sim_type = latency
+param47 F  injection_rate = 0.35
+END Configuration File: examples/mesh44
+Configuration file : traffic=uniform
+OVERRIDE Parameter: traffic=uniform
+param48 S traffic = uniform
+Configuration file : injection_rate=0.30
+OVERRIDE Parameter: injection_rate=0.30
+param49 F  injection_rate = 0.3
+........... Returning to main after parsing.............
+routemap initialized....
+trafficmap initialized....
+injectionmap initialized....
+the number of networks are1............Network parameters - computed ............
+ k= 4 &  n= 2, Total# nodes =16,  Total # channels =64
+......................................................................
+Network build succesfull !!..... channels and nodes created & initialized ..
+Packet Size = 1
+traffic manager instantiated !!!  & returned to MAIN!!!
+classes ==1
+sim mode is0
+***latency mode***
+_warmup_periods =3
+_sample_period =1000
+_warmup_threshold =0.05
+++++++++++++++++++++++++++++++++++++++
+0
+simulation in Phase: Itertaion :0
+Minimum latency = 4
+Average latency = 16.8254
+Maximum latency = 58
+Average fragmentation = 1.1539
+Accepted packets = 0.459 at node 14 (avg = 0.500312)
+latency change    = 1
+throughput change = 1
+completed warm up phase: 0
+Iteration  0 over
+++++++++++++++++++++++++++++++++++++++
+0
+simulation in Phase: Itertaion :1
+Minimum latency = 4
+Average latency = 17.0996
+Maximum latency = 58
+Average fragmentation = 1.18819
+Accepted packets = 0.4625 at node 10 (avg = 0.505875)
+latency change    = 0.0160327
+throughput change = 0.0109958
+completed warm up phase: 1
+Iteration  1 over
+++++++++++++++++++++++++++++++++++++++
+0
+simulation in Phase: Itertaion :2
+Minimum latency = 4
+Average latency = 17.422
+Maximum latency = 72
+Average fragmentation = 1.19633
+Accepted packets = 0.46 at node 4 (avg = 0.508979)
+latency change    = 0.0185051
+throughput change = 0.00609881
+completed warm up phase: 2
+Warmed up ...Time used is 3000 cycles
+Iteration  2 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :3
+Minimum latency = 4
+Average latency = 17.924
+Maximum latency = 66
+Average fragmentation = 1.22937
+Accepted packets = 0.443 at node 9 (avg = 0.521437)
+latency change    = 0.0280099
+throughput change = 0.0238923
+completed one running phase
+flag converged == 0
+Iteration  3 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :4
+Minimum latency = 4
+Average latency = 17.6667
+Maximum latency = 66
+Average fragmentation = 1.21547
+Accepted packets = 0.4475 at node 0 (avg = 0.517)
+latency change    = 0.0145683
+throughput change = 0.00858317
+completed one running phase
+flag converged == 1
+Iteration  4 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :5
+Minimum latency = 4
+Average latency = 17.7437
+Maximum latency = 66
+Average fragmentation = 1.22143
+Accepted packets = 0.474333 at node 0 (avg = 0.519542)
+latency change    = 0.00434219
+throughput change = 0.00489213
+completed one running phase
+flag converged == 2
+Iteration  5 over
+#@#@#@#@#  Entered Draining stage @#@#@#@#@#@
+flag converged == 4
+Draining all recorded packets ...
+pkts_out_stnd = 34
+Draining remaining packets ...
+Time taken is 6054 cycles
+====== Traffic class 0 ======
+counta = 17552
+countb = 4323
+countc = 4324
+countd = 2640
+Overall minimum latency = 4 (1 samples)
+Overall average latency = 17.7585 (1 samples)
+Overall maximum latency = 66 (1 samples)
+Overall minimum transaction latency = 4 (1 samples)
+Overall average transaction latency = 17.7585 (1 samples)
+Overall maximum transaction latency = 66 (1 samples)
+Overall minimum fragmentation = 0 (1 samples)
+Overall average fragmentation = 1.2236 (1 samples)
+Overall maximum fragmentation = 27 (1 samples)
+Overall average accepted rate = 0.519542 (1 samples)
+Overall min accepted rate = 0.474333 (1 samples)
+Slowest flit = 29909
+Average hops = 3.49857 (14383 samples)
+Total run time 1.08978
+channel utilization
+**********************
+num of non-empty channels- 48
+Totalflits- 124057
+Avg-flits- 2584.52
+total flit deviation- 19977.1
+avg flit deviation- 416.189
+LUF= 6.20997
+track file opened succesfullystatistics file opened succesfully.........................$$ Simulation Output $$.......................
+param0   channel_file%%%
+param1   trace_file%%%trace-file.txt
+param2   topology%%%torus
+param3   routing_function%%%none
+param4   router%%%iq
+param5   filter_spec_grants%%%confl_nonspec_gnts
+param6   vc_allocator%%%islip
+param7   sw_allocator%%%islip
+param8   vc_alloc_arb_type%%%round_robin
+param9   sw_alloc_arb_type%%%round_robin
+param10   traffic%%%uniform
+param11   injection_process%%%bernoulli
+param12   priority%%%none
+param13   sim_type%%%latency
+param14   watch_file%%%
+param15   watch_out%%%
+param16   stats_out%%%
+param17   flow_out%%%
+param18   power_output_file%%%pwr_tmp
+param19   tech_file%%%../utils/temp
+param20   network_file%%%
+Default values succesfully loaded
+returned from default config value setting to main ()
+Configuration file : examples/mesh44
+######..Parsing config file ....##########
+param21 S topology = mesh
+param22 I  k = 4
+param23 I  n = 2
+param24 S routing_function = oddeven_modified
+param25 I  num_vcs = 4
+param26 I  vc_buf_size = 3
+param27 I  wait_for_tail_credit = 1
+param28 S vc_allocator = select
+param29 S sw_allocator = select
+param30 I  alloc_iters = 1
+param31 I  credit_delay = 1
+param32 I  routing_delay = 1
+param33 I  vc_alloc_delay = 1
+param34 I  input_speedup = 1
+param35 I  output_speedup = 1
+param36 F  internal_speedup = 1
+param37 S traffic = uniform
+param38 I  flitas = 1
+param39 I  flitbs = 2
+param40 I  flitcs = 3
+param41 I  flitds = 4
+param42 I  flitac = 60
+param43 I  flitbc = 15
+param44 I  flitcc = 15
+param45 I  flitdc = 10
+param46 S sim_type = latency
+param47 F  injection_rate = 0.35
+END Configuration File: examples/mesh44
+Configuration file : traffic=uniform
+OVERRIDE Parameter: traffic=uniform
+param48 S traffic = uniform
+Configuration file : injection_rate=0.31
+OVERRIDE Parameter: injection_rate=0.31
+param49 F  injection_rate = 0.31
+........... Returning to main after parsing.............
+routemap initialized....
+trafficmap initialized....
+injectionmap initialized....
+the number of networks are1............Network parameters - computed ............
+ k= 4 &  n= 2, Total# nodes =16,  Total # channels =64
+......................................................................
+Network build succesfull !!..... channels and nodes created & initialized ..
+Packet Size = 1
+traffic manager instantiated !!!  & returned to MAIN!!!
+classes ==1
+sim mode is0
+***latency mode***
+_warmup_periods =3
+_sample_period =1000
+_warmup_threshold =0.05
+++++++++++++++++++++++++++++++++++++++
+0
+simulation in Phase: Itertaion :0
+Minimum latency = 4
+Average latency = 17.6208
+Maximum latency = 56
+Average fragmentation = 1.1603
+Accepted packets = 0.479 at node 14 (avg = 0.518375)
+latency change    = 1
+throughput change = 1
+completed warm up phase: 0
+Iteration  0 over
+++++++++++++++++++++++++++++++++++++++
+0
+simulation in Phase: Itertaion :1
+Minimum latency = 4
+Average latency = 17.5988
+Maximum latency = 56
+Average fragmentation = 1.18986
+Accepted packets = 0.4805 at node 4 (avg = 0.523)
+latency change    = 0.00125017
+throughput change = 0.00884321
+completed warm up phase: 1
+Iteration  1 over
+++++++++++++++++++++++++++++++++++++++
+0
+simulation in Phase: Itertaion :2
+Minimum latency = 4
+Average latency = 17.8074
+Maximum latency = 81
+Average fragmentation = 1.19207
+Accepted packets = 0.477667 at node 4 (avg = 0.525354)
+latency change    = 0.0117107
+throughput change = 0.0044811
+completed warm up phase: 2
+Warmed up ...Time used is 3000 cycles
+Iteration  2 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :3
+Minimum latency = 4
+Average latency = 18.3492
+Maximum latency = 64
+Average fragmentation = 1.3207
+Accepted packets = 0.456 at node 0 (avg = 0.540813)
+latency change    = 0.0295265
+throughput change = 0.0285835
+completed one running phase
+flag converged == 0
+Iteration  3 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :4
+Minimum latency = 4
+Average latency = 18.3654
+Maximum latency = 72
+Average fragmentation = 1.27271
+Accepted packets = 0.469 at node 0 (avg = 0.533438)
+latency change    = 0.000882644
+throughput change = 0.0138254
+completed one running phase
+flag converged == 1
+Iteration  4 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :5
+Minimum latency = 4
+Average latency = 18.4866
+Maximum latency = 72
+Average fragmentation = 1.2711
+Accepted packets = 0.488 at node 0 (avg = 0.535021)
+latency change    = 0.00655881
+throughput change = 0.00295939
+completed one running phase
+flag converged == 2
+Iteration  5 over
+#@#@#@#@#  Entered Draining stage @#@#@#@#@#@
+flag converged == 4
+Draining all recorded packets ...
+pkts_out_stnd = 31
+Draining remaining packets ...
+Time taken is 6053 cycles
+====== Traffic class 0 ======
+counta = 18118
+countb = 4465
+countc = 4464
+countd = 2705
+Overall minimum latency = 4 (1 samples)
+Overall average latency = 18.5003 (1 samples)
+Overall maximum latency = 72 (1 samples)
+Overall minimum transaction latency = 4 (1 samples)
+Overall average transaction latency = 18.5003 (1 samples)
+Overall maximum transaction latency = 72 (1 samples)
+Overall minimum fragmentation = 0 (1 samples)
+Overall average fragmentation = 1.27263 (1 samples)
+Overall maximum fragmentation = 32 (1 samples)
+Overall average accepted rate = 0.535021 (1 samples)
+Overall min accepted rate = 0.488 (1 samples)
+Slowest flit = 41178
+Average hops = 3.51064 (14848 samples)
+Total run time 1.1184
+channel utilization
+**********************
+num of non-empty channels- 48
+Totalflits- 128752
+Avg-flits- 2682.33
+total flit deviation- 20555.3
+avg flit deviation- 428.236
+LUF= 6.26368
+track file opened succesfullystatistics file opened succesfully.........................$$ Simulation Output $$.......................
+param0   channel_file%%%
+param1   trace_file%%%trace-file.txt
+param2   topology%%%torus
+param3   routing_function%%%none
+param4   router%%%iq
+param5   filter_spec_grants%%%confl_nonspec_gnts
+param6   vc_allocator%%%islip
+param7   sw_allocator%%%islip
+param8   vc_alloc_arb_type%%%round_robin
+param9   sw_alloc_arb_type%%%round_robin
+param10   traffic%%%uniform
+param11   injection_process%%%bernoulli
+param12   priority%%%none
+param13   sim_type%%%latency
+param14   watch_file%%%
+param15   watch_out%%%
+param16   stats_out%%%
+param17   flow_out%%%
+param18   power_output_file%%%pwr_tmp
+param19   tech_file%%%../utils/temp
+param20   network_file%%%
+Default values succesfully loaded
+returned from default config value setting to main ()
+Configuration file : examples/mesh44
+######..Parsing config file ....##########
+param21 S topology = mesh
+param22 I  k = 4
+param23 I  n = 2
+param24 S routing_function = oddeven_modified
+param25 I  num_vcs = 4
+param26 I  vc_buf_size = 3
+param27 I  wait_for_tail_credit = 1
+param28 S vc_allocator = select
+param29 S sw_allocator = select
+param30 I  alloc_iters = 1
+param31 I  credit_delay = 1
+param32 I  routing_delay = 1
+param33 I  vc_alloc_delay = 1
+param34 I  input_speedup = 1
+param35 I  output_speedup = 1
+param36 F  internal_speedup = 1
+param37 S traffic = uniform
+param38 I  flitas = 1
+param39 I  flitbs = 2
+param40 I  flitcs = 3
+param41 I  flitds = 4
+param42 I  flitac = 60
+param43 I  flitbc = 15
+param44 I  flitcc = 15
+param45 I  flitdc = 10
+param46 S sim_type = latency
+param47 F  injection_rate = 0.35
+END Configuration File: examples/mesh44
+Configuration file : traffic=uniform
+OVERRIDE Parameter: traffic=uniform
+param48 S traffic = uniform
+Configuration file : injection_rate=0.32
+OVERRIDE Parameter: injection_rate=0.32
+param49 F  injection_rate = 0.32
+........... Returning to main after parsing.............
+routemap initialized....
+trafficmap initialized....
+injectionmap initialized....
+the number of networks are1............Network parameters - computed ............
+ k= 4 &  n= 2, Total# nodes =16,  Total # channels =64
+......................................................................
+Network build succesfull !!..... channels and nodes created & initialized ..
+Packet Size = 1
+traffic manager instantiated !!!  & returned to MAIN!!!
+classes ==1
+sim mode is0
+***latency mode***
+_warmup_periods =3
+_sample_period =1000
+_warmup_threshold =0.05
+++++++++++++++++++++++++++++++++++++++
+0
+simulation in Phase: Itertaion :0
+Minimum latency = 4
+Average latency = 18.6377
+Maximum latency = 74
+Average fragmentation = 1.24865
+Accepted packets = 0.497 at node 10 (avg = 0.537688)
+latency change    = 1
+throughput change = 1
+completed warm up phase: 0
+Iteration  0 over
+++++++++++++++++++++++++++++++++++++++
+0
+simulation in Phase: Itertaion :1
+Minimum latency = 4
+Average latency = 19.5062
+Maximum latency = 100
+Average fragmentation = 1.29297
+Accepted packets = 0.4925 at node 4 (avg = 0.540625)
+latency change    = 0.0445235
+throughput change = 0.00543353
+completed warm up phase: 1
+Iteration  1 over
+++++++++++++++++++++++++++++++++++++++
+0
+simulation in Phase: Itertaion :2
+Minimum latency = 4
+Average latency = 19.2694
+Maximum latency = 100
+Average fragmentation = 1.27122
+Accepted packets = 0.496333 at node 4 (avg = 0.542417)
+latency change    = 0.0122889
+throughput change = 0.00330312
+completed warm up phase: 2
+Warmed up ...Time used is 3000 cycles
+Iteration  2 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :3
+Minimum latency = 4
+Average latency = 19.7167
+Maximum latency = 73
+Average fragmentation = 1.32429
+Accepted packets = 0.459 at node 0 (avg = 0.556813)
+latency change    = 0.0226841
+throughput change = 0.025854
+completed one running phase
+flag converged == 0
+Iteration  3 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :4
+Minimum latency = 4
+Average latency = 19.1528
+Maximum latency = 73
+Average fragmentation = 1.30616
+Accepted packets = 0.4765 at node 0 (avg = 0.551281)
+latency change    = 0.0294398
+throughput change = 0.0100334
+completed one running phase
+flag converged == 1
+Iteration  4 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :5
+Minimum latency = 4
+Average latency = 19.098
+Maximum latency = 76
+Average fragmentation = 1.30463
+Accepted packets = 0.494667 at node 0 (avg = 0.552)
+latency change    = 0.00287312
+throughput change = 0.00130208
+completed one running phase
+flag converged == 2
+Iteration  5 over
+#@#@#@#@#  Entered Draining stage @#@#@#@#@#@
+flag converged == 4
+Draining all recorded packets ...
+pkts_out_stnd = 32
+Draining remaining packets ...
+Time taken is 6052 cycles
+====== Traffic class 0 ======
+counta = 18748
+countb = 4592
+countc = 4622
+countd = 2779
+Overall minimum latency = 4 (1 samples)
+Overall average latency = 19.1002 (1 samples)
+Overall maximum latency = 76 (1 samples)
+Overall minimum transaction latency = 4 (1 samples)
+Overall average transaction latency = 19.1002 (1 samples)
+Overall maximum transaction latency = 76 (1 samples)
+Overall minimum fragmentation = 0 (1 samples)
+Overall average fragmentation = 1.30625 (1 samples)
+Overall maximum fragmentation = 28 (1 samples)
+Overall average accepted rate = 0.552 (1 samples)
+Overall min accepted rate = 0.494667 (1 samples)
+Slowest flit = 47898
+Average hops = 3.48889 (15347 samples)
+Total run time 1.13127
+channel utilization
+**********************
+num of non-empty channels- 48
+Totalflits- 131414
+Avg-flits- 2737.79
+total flit deviation- 20255.2
+avg flit deviation- 421.983
+LUF= 6.48792
+track file opened succesfullystatistics file opened succesfully.........................$$ Simulation Output $$.......................
+param0   channel_file%%%
+param1   trace_file%%%trace-file.txt
+param2   topology%%%torus
+param3   routing_function%%%none
+param4   router%%%iq
+param5   filter_spec_grants%%%confl_nonspec_gnts
+param6   vc_allocator%%%islip
+param7   sw_allocator%%%islip
+param8   vc_alloc_arb_type%%%round_robin
+param9   sw_alloc_arb_type%%%round_robin
+param10   traffic%%%uniform
+param11   injection_process%%%bernoulli
+param12   priority%%%none
+param13   sim_type%%%latency
+param14   watch_file%%%
+param15   watch_out%%%
+param16   stats_out%%%
+param17   flow_out%%%
+param18   power_output_file%%%pwr_tmp
+param19   tech_file%%%../utils/temp
+param20   network_file%%%
+Default values succesfully loaded
+returned from default config value setting to main ()
+Configuration file : examples/mesh44
+######..Parsing config file ....##########
+param21 S topology = mesh
+param22 I  k = 4
+param23 I  n = 2
+param24 S routing_function = oddeven_modified
+param25 I  num_vcs = 4
+param26 I  vc_buf_size = 3
+param27 I  wait_for_tail_credit = 1
+param28 S vc_allocator = select
+param29 S sw_allocator = select
+param30 I  alloc_iters = 1
+param31 I  credit_delay = 1
+param32 I  routing_delay = 1
+param33 I  vc_alloc_delay = 1
+param34 I  input_speedup = 1
+param35 I  output_speedup = 1
+param36 F  internal_speedup = 1
+param37 S traffic = uniform
+param38 I  flitas = 1
+param39 I  flitbs = 2
+param40 I  flitcs = 3
+param41 I  flitds = 4
+param42 I  flitac = 60
+param43 I  flitbc = 15
+param44 I  flitcc = 15
+param45 I  flitdc = 10
+param46 S sim_type = latency
+param47 F  injection_rate = 0.35
+END Configuration File: examples/mesh44
+Configuration file : traffic=uniform
+OVERRIDE Parameter: traffic=uniform
+param48 S traffic = uniform
+Configuration file : injection_rate=0.33
+OVERRIDE Parameter: injection_rate=0.33
+param49 F  injection_rate = 0.33
+........... Returning to main after parsing.............
+routemap initialized....
+trafficmap initialized....
+injectionmap initialized....
+the number of networks are1............Network parameters - computed ............
+ k= 4 &  n= 2, Total# nodes =16,  Total # channels =64
+......................................................................
+Network build succesfull !!..... channels and nodes created & initialized ..
+Packet Size = 1
+traffic manager instantiated !!!  & returned to MAIN!!!
+classes ==1
+sim mode is0
+***latency mode***
+_warmup_periods =3
+_sample_period =1000
+_warmup_threshold =0.05
+++++++++++++++++++++++++++++++++++++++
+0
+simulation in Phase: Itertaion :0
+Minimum latency = 4
+Average latency = 19.3809
+Maximum latency = 70
+Average fragmentation = 1.32841
+Accepted packets = 0.516 at node 0 (avg = 0.5535)
+latency change    = 1
+throughput change = 1
+completed warm up phase: 0
+Iteration  0 over
+++++++++++++++++++++++++++++++++++++++
+0
+simulation in Phase: Itertaion :1
+Minimum latency = 4
+Average latency = 19.6515
+Maximum latency = 74
+Average fragmentation = 1.36139
+Accepted packets = 0.512 at node 4 (avg = 0.557312)
+latency change    = 0.0137684
+throughput change = 0.00684087
+completed warm up phase: 1
+Iteration  1 over
+++++++++++++++++++++++++++++++++++++++
+0
+simulation in Phase: Itertaion :2
+Minimum latency = 4
+Average latency = 20.3475
+Maximum latency = 132
+Average fragmentation = 1.33267
+Accepted packets = 0.509667 at node 4 (avg = 0.559854)
+latency change    = 0.0342082
+throughput change = 0.00453987
+completed warm up phase: 2
+Warmed up ...Time used is 3000 cycles
+Iteration  2 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :3
+Minimum latency = 4
+Average latency = 21.2372
+Maximum latency = 91
+Average fragmentation = 1.40607
+Accepted packets = 0.471 at node 0 (avg = 0.5715)
+latency change    = 0.0418933
+throughput change = 0.0203777
+completed one running phase
+flag converged == 0
+Iteration  3 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :4
+Minimum latency = 4
+Average latency = 21.3423
+Maximum latency = 91
+Average fragmentation = 1.39406
+Accepted packets = 0.498 at node 0 (avg = 0.568)
+latency change    = 0.00492371
+throughput change = 0.00616197
+completed one running phase
+flag converged == 1
+Iteration  4 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :5
+Minimum latency = 4
+Average latency = 21.4449
+Maximum latency = 91
+Average fragmentation = 1.37736
+Accepted packets = 0.515 at node 0 (avg = 0.568063)
+latency change    = 0.00478506
+throughput change = 0.000110023
+completed one running phase
+flag converged == 2
+Iteration  5 over
+#@#@#@#@#  Entered Draining stage @#@#@#@#@#@
+flag converged == 4
+Draining all recorded packets ...
+pkts_out_stnd = 49
+Draining remaining packets ...
+Time taken is 6071 cycles
+====== Traffic class 0 ======
+counta = 19378
+countb = 4750
+countc = 4770
+countd = 2876
+Overall minimum latency = 4 (1 samples)
+Overall average latency = 21.476 (1 samples)
+Overall maximum latency = 91 (1 samples)
+Overall minimum transaction latency = 4 (1 samples)
+Overall average transaction latency = 21.476 (1 samples)
+Overall maximum transaction latency = 91 (1 samples)
+Overall minimum fragmentation = 0 (1 samples)
+Overall average fragmentation = 1.37779 (1 samples)
+Overall maximum fragmentation = 28 (1 samples)
+Overall average accepted rate = 0.568063 (1 samples)
+Overall min accepted rate = 0.515 (1 samples)
+Slowest flit = 32113
+Average hops = 3.48968 (15837 samples)
+Total run time 1.17211
+channel utilization
+**********************
+num of non-empty channels- 48
+Totalflits- 136086
+Avg-flits- 2835.12
+total flit deviation- 20666.5
+avg flit deviation- 430.552
+LUF= 6.58486
+track file opened succesfullystatistics file opened succesfully.........................$$ Simulation Output $$.......................
+param0   channel_file%%%
+param1   trace_file%%%trace-file.txt
+param2   topology%%%torus
+param3   routing_function%%%none
+param4   router%%%iq
+param5   filter_spec_grants%%%confl_nonspec_gnts
+param6   vc_allocator%%%islip
+param7   sw_allocator%%%islip
+param8   vc_alloc_arb_type%%%round_robin
+param9   sw_alloc_arb_type%%%round_robin
+param10   traffic%%%uniform
+param11   injection_process%%%bernoulli
+param12   priority%%%none
+param13   sim_type%%%latency
+param14   watch_file%%%
+param15   watch_out%%%
+param16   stats_out%%%
+param17   flow_out%%%
+param18   power_output_file%%%pwr_tmp
+param19   tech_file%%%../utils/temp
+param20   network_file%%%
+Default values succesfully loaded
+returned from default config value setting to main ()
+Configuration file : examples/mesh44
+######..Parsing config file ....##########
+param21 S topology = mesh
+param22 I  k = 4
+param23 I  n = 2
+param24 S routing_function = oddeven_modified
+param25 I  num_vcs = 4
+param26 I  vc_buf_size = 3
+param27 I  wait_for_tail_credit = 1
+param28 S vc_allocator = select
+param29 S sw_allocator = select
+param30 I  alloc_iters = 1
+param31 I  credit_delay = 1
+param32 I  routing_delay = 1
+param33 I  vc_alloc_delay = 1
+param34 I  input_speedup = 1
+param35 I  output_speedup = 1
+param36 F  internal_speedup = 1
+param37 S traffic = uniform
+param38 I  flitas = 1
+param39 I  flitbs = 2
+param40 I  flitcs = 3
+param41 I  flitds = 4
+param42 I  flitac = 60
+param43 I  flitbc = 15
+param44 I  flitcc = 15
+param45 I  flitdc = 10
+param46 S sim_type = latency
+param47 F  injection_rate = 0.35
+END Configuration File: examples/mesh44
+Configuration file : traffic=uniform
+OVERRIDE Parameter: traffic=uniform
+param48 S traffic = uniform
+Configuration file : injection_rate=0.34
+OVERRIDE Parameter: injection_rate=0.34
+param49 F  injection_rate = 0.34
+........... Returning to main after parsing.............
+routemap initialized....
+trafficmap initialized....
+injectionmap initialized....
+the number of networks are1............Network parameters - computed ............
+ k= 4 &  n= 2, Total# nodes =16,  Total # channels =64
+......................................................................
+Network build succesfull !!..... channels and nodes created & initialized ..
+Packet Size = 1
+traffic manager instantiated !!!  & returned to MAIN!!!
+classes ==1
+sim mode is0
+***latency mode***
+_warmup_periods =3
+_sample_period =1000
+_warmup_threshold =0.05
+++++++++++++++++++++++++++++++++++++++
+0
+simulation in Phase: Itertaion :0
+Minimum latency = 4
+Average latency = 22.6569
+Maximum latency = 118
+Average fragmentation = 1.37393
+Accepted packets = 0.524 at node 14 (avg = 0.5655)
+latency change    = 1
+throughput change = 1
+completed warm up phase: 0
+Iteration  0 over
+++++++++++++++++++++++++++++++++++++++
+0
+simulation in Phase: Itertaion :1
+Minimum latency = 4
+Average latency = 26.6576
+Maximum latency = 144
+Average fragmentation = 1.40881
+Accepted packets = 0.5255 at node 14 (avg = 0.571656)
+latency change    = 0.150078
+throughput change = 0.0107691
+completed warm up phase: 1
+Iteration  1 over
+++++++++++++++++++++++++++++++++++++++
+0
+simulation in Phase: Itertaion :2
+Minimum latency = 4
+Average latency = 26.711
+Maximum latency = 144
+Average fragmentation = 1.39735
+Accepted packets = 0.523667 at node 4 (avg = 0.576333)
+latency change    = 0.00199869
+throughput change = 0.00811524
+completed warm up phase: 2
+Warmed up ...Time used is 3000 cycles
+Iteration  2 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :3
+Minimum latency = 4
+Average latency = 25.0985
+Maximum latency = 111
+Average fragmentation = 1.53773
+Accepted packets = 0.491 at node 0 (avg = 0.588437)
+latency change    = 0.0642474
+throughput change = 0.02057
+completed one running phase
+flag converged == 0
+Iteration  3 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :4
+Minimum latency = 4
+Average latency = 26.1729
+Maximum latency = 134
+Average fragmentation = 1.48213
+Accepted packets = 0.517 at node 0 (avg = 0.585281)
+latency change    = 0.0410497
+throughput change = 0.00539271
+completed one running phase
+flag converged == 0
+Iteration  4 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :5
+Minimum latency = 4
+Average latency = 25.3439
+Maximum latency = 134
+Average fragmentation = 1.46404
+Accepted packets = 0.534333 at node 0 (avg = 0.585521)
+latency change    = 0.0327109
+throughput change = 0.00040918
+completed one running phase
+flag converged == 1
+Iteration  5 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :6
+Minimum latency = 4
+Average latency = 24.7964
+Maximum latency = 134
+Average fragmentation = 1.4778
+Accepted packets = 0.54 at node 0 (avg = 0.58575)
+latency change    = 0.0220761
+throughput change = 0.000391236
+completed one running phase
+flag converged == 2
+Iteration  6 over
+#@#@#@#@#  Entered Draining stage @#@#@#@#@#@
+flag converged == 4
+Draining all recorded packets ...
+pkts_out_stnd = 79
+Draining remaining packets ...
+Time taken is 7103 cycles
+====== Traffic class 0 ======
+counta = 23297
+countb = 5791
+countc = 5783
+countd = 3458
+Overall minimum latency = 4 (1 samples)
+Overall average latency = 24.8835 (1 samples)
+Overall maximum latency = 134 (1 samples)
+Overall minimum transaction latency = 4 (1 samples)
+Overall average transaction latency = 24.8835 (1 samples)
+Overall maximum transaction latency = 134 (1 samples)
+Overall minimum fragmentation = 0 (1 samples)
+Overall average fragmentation = 1.48141 (1 samples)
+Overall maximum fragmentation = 33 (1 samples)
+Overall average accepted rate = 0.58575 (1 samples)
+Overall min accepted rate = 0.54 (1 samples)
+Slowest flit = 45756
+Average hops = 3.50629 (21790 samples)
+Total run time 1.41317
+channel utilization
+**********************
+num of non-empty channels- 48
+Totalflits- 165302
+Avg-flits- 3443.79
+total flit deviation- 25015.2
+avg flit deviation- 521.149
+LUF= 6.60807
+track file opened succesfullystatistics file opened succesfully.........................$$ Simulation Output $$.......................
+param0   channel_file%%%
+param1   trace_file%%%trace-file.txt
+param2   topology%%%torus
+param3   routing_function%%%none
+param4   router%%%iq
+param5   filter_spec_grants%%%confl_nonspec_gnts
+param6   vc_allocator%%%islip
+param7   sw_allocator%%%islip
+param8   vc_alloc_arb_type%%%round_robin
+param9   sw_alloc_arb_type%%%round_robin
+param10   traffic%%%uniform
+param11   injection_process%%%bernoulli
+param12   priority%%%none
+param13   sim_type%%%latency
+param14   watch_file%%%
+param15   watch_out%%%
+param16   stats_out%%%
+param17   flow_out%%%
+param18   power_output_file%%%pwr_tmp
+param19   tech_file%%%../utils/temp
+param20   network_file%%%
+Default values succesfully loaded
+returned from default config value setting to main ()
+Configuration file : examples/mesh44
+######..Parsing config file ....##########
+param21 S topology = mesh
+param22 I  k = 4
+param23 I  n = 2
+param24 S routing_function = oddeven_modified
+param25 I  num_vcs = 4
+param26 I  vc_buf_size = 3
+param27 I  wait_for_tail_credit = 1
+param28 S vc_allocator = select
+param29 S sw_allocator = select
+param30 I  alloc_iters = 1
+param31 I  credit_delay = 1
+param32 I  routing_delay = 1
+param33 I  vc_alloc_delay = 1
+param34 I  input_speedup = 1
+param35 I  output_speedup = 1
+param36 F  internal_speedup = 1
+param37 S traffic = uniform
+param38 I  flitas = 1
+param39 I  flitbs = 2
+param40 I  flitcs = 3
+param41 I  flitds = 4
+param42 I  flitac = 60
+param43 I  flitbc = 15
+param44 I  flitcc = 15
+param45 I  flitdc = 10
+param46 S sim_type = latency
+param47 F  injection_rate = 0.35
+END Configuration File: examples/mesh44
+Configuration file : traffic=uniform
+OVERRIDE Parameter: traffic=uniform
+param48 S traffic = uniform
+Configuration file : injection_rate=0.35
+OVERRIDE Parameter: injection_rate=0.35
+param49 F  injection_rate = 0.35
+........... Returning to main after parsing.............
+routemap initialized....
+trafficmap initialized....
+injectionmap initialized....
+the number of networks are1............Network parameters - computed ............
+ k= 4 &  n= 2, Total# nodes =16,  Total # channels =64
+......................................................................
+Network build succesfull !!..... channels and nodes created & initialized ..
+Packet Size = 1
+traffic manager instantiated !!!  & returned to MAIN!!!
+classes ==1
+sim mode is0
+***latency mode***
+_warmup_periods =3
+_sample_period =1000
+_warmup_threshold =0.05
+++++++++++++++++++++++++++++++++++++++
+0
+simulation in Phase: Itertaion :0
+Minimum latency = 4
+Average latency = 23.6494
+Maximum latency = 93
+Average fragmentation = 1.44564
+Accepted packets = 0.54 at node 14 (avg = 0.5805)
+latency change    = 1
+throughput change = 1
+completed warm up phase: 0
+Iteration  0 over
+++++++++++++++++++++++++++++++++++++++
+0
+simulation in Phase: Itertaion :1
+Minimum latency = 4
+Average latency = 25.9272
+Maximum latency = 123
+Average fragmentation = 1.49392
+Accepted packets = 0.551 at node 4 (avg = 0.59)
+latency change    = 0.0878556
+throughput change = 0.0161017
+completed warm up phase: 1
+Iteration  1 over
+++++++++++++++++++++++++++++++++++++++
+0
+simulation in Phase: Itertaion :2
+Minimum latency = 4
+Average latency = 27.8894
+Maximum latency = 190
+Average fragmentation = 1.48267
+Accepted packets = 0.54 at node 4 (avg = 0.591062)
+latency change    = 0.0703544
+throughput change = 0.00179761
+completed warm up phase: 2
+Warmed up ...Time used is 3000 cycles
+Iteration  2 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :3
+Minimum latency = 4
+Average latency = 39.6142
+Maximum latency = 176
+Average fragmentation = 1.53382
+Accepted packets = 0.497 at node 0 (avg = 0.602)
+latency change    = 0.295975
+throughput change = 0.0181686
+completed one running phase
+flag converged == 0
+Iteration  3 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :4
+Minimum latency = 4
+Average latency = 40.8011
+Maximum latency = 223
+Average fragmentation = 1.51531
+Accepted packets = 0.5345 at node 0 (avg = 0.598437)
+latency change    = 0.0290909
+throughput change = 0.005953
+completed one running phase
+flag converged == 0
+Iteration  4 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :5
+Minimum latency = 4
+Average latency = 41.6177
+Maximum latency = 226
+Average fragmentation = 1.48686
+Accepted packets = 0.546 at node 0 (avg = 0.599167)
+latency change    = 0.0196214
+throughput change = 0.00121697
+completed one running phase
+flag converged == 1
+Iteration  5 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :6
+Minimum latency = 4
+Average latency = 43.1506
+Maximum latency = 257
+Average fragmentation = 1.50014
+Accepted packets = 0.554 at node 0 (avg = 0.601172)
+latency change    = 0.0355248
+throughput change = 0.0033355
+completed one running phase
+flag converged == 2
+Iteration  6 over
+#@#@#@#@#  Entered Draining stage @#@#@#@#@#@
+flag converged == 4
+Draining all recorded packets ...
+pkts_out_stnd = 151
+Draining remaining packets ...
+Time taken is 7183 cycles
+====== Traffic class 0 ======
+counta = 24171
+countb = 6008
+countc = 5994
+countd = 3572
+Overall minimum latency = 4 (1 samples)
+Overall average latency = 43.5768 (1 samples)
+Overall maximum latency = 257 (1 samples)
+Overall minimum transaction latency = 4 (1 samples)
+Overall average transaction latency = 43.5768 (1 samples)
+Overall maximum transaction latency = 257 (1 samples)
+Overall minimum fragmentation = 0 (1 samples)
+Overall average fragmentation = 1.50427 (1 samples)
+Overall maximum fragmentation = 37 (1 samples)
+Overall average accepted rate = 0.601172 (1 samples)
+Overall min accepted rate = 0.554 (1 samples)
+Slowest flit = 57036
+Average hops = 3.49127 (22458 samples)
+Total run time 1.46484
+channel utilization
+**********************
+num of non-empty channels- 48
+Totalflits- 170749
+Avg-flits- 3557.27
+total flit deviation- 24626.3
+avg flit deviation- 513.047
+LUF= 6.93362
+track file opened succesfullystatistics file opened succesfully.........................$$ Simulation Output $$.......................
+param0   channel_file%%%
+param1   trace_file%%%trace-file.txt
+param2   topology%%%torus
+param3   routing_function%%%none
+param4   router%%%iq
+param5   filter_spec_grants%%%confl_nonspec_gnts
+param6   vc_allocator%%%islip
+param7   sw_allocator%%%islip
+param8   vc_alloc_arb_type%%%round_robin
+param9   sw_alloc_arb_type%%%round_robin
+param10   traffic%%%uniform
+param11   injection_process%%%bernoulli
+param12   priority%%%none
+param13   sim_type%%%latency
+param14   watch_file%%%
+param15   watch_out%%%
+param16   stats_out%%%
+param17   flow_out%%%
+param18   power_output_file%%%pwr_tmp
+param19   tech_file%%%../utils/temp
+param20   network_file%%%
+Default values succesfully loaded
+returned from default config value setting to main ()
+Configuration file : examples/mesh44
+######..Parsing config file ....##########
+param21 S topology = mesh
+param22 I  k = 4
+param23 I  n = 2
+param24 S routing_function = oddeven_modified
+param25 I  num_vcs = 4
+param26 I  vc_buf_size = 3
+param27 I  wait_for_tail_credit = 1
+param28 S vc_allocator = select
+param29 S sw_allocator = select
+param30 I  alloc_iters = 1
+param31 I  credit_delay = 1
+param32 I  routing_delay = 1
+param33 I  vc_alloc_delay = 1
+param34 I  input_speedup = 1
+param35 I  output_speedup = 1
+param36 F  internal_speedup = 1
+param37 S traffic = uniform
+param38 I  flitas = 1
+param39 I  flitbs = 2
+param40 I  flitcs = 3
+param41 I  flitds = 4
+param42 I  flitac = 60
+param43 I  flitbc = 15
+param44 I  flitcc = 15
+param45 I  flitdc = 10
+param46 S sim_type = latency
+param47 F  injection_rate = 0.35
+END Configuration File: examples/mesh44
+Configuration file : traffic=uniform
+OVERRIDE Parameter: traffic=uniform
+param48 S traffic = uniform
+Configuration file : injection_rate=0.36
+OVERRIDE Parameter: injection_rate=0.36
+param49 F  injection_rate = 0.36
+........... Returning to main after parsing.............
+routemap initialized....
+trafficmap initialized....
+injectionmap initialized....
+the number of networks are1............Network parameters - computed ............
+ k= 4 &  n= 2, Total# nodes =16,  Total # channels =64
+......................................................................
+Network build succesfull !!..... channels and nodes created & initialized ..
+Packet Size = 1
+traffic manager instantiated !!!  & returned to MAIN!!!
+classes ==1
+sim mode is0
+***latency mode***
+_warmup_periods =3
+_sample_period =1000
+_warmup_threshold =0.05
+++++++++++++++++++++++++++++++++++++++
+0
+simulation in Phase: Itertaion :0
+Minimum latency = 4
+Average latency = 27.3486
+Maximum latency = 135
+Average fragmentation = 1.4989
+Accepted packets = 0.546 at node 14 (avg = 0.585813)
+latency change    = 1
+throughput change = 1
+completed warm up phase: 0
+Iteration  0 over
+++++++++++++++++++++++++++++++++++++++
+0
+simulation in Phase: Itertaion :1
+Minimum latency = 4
+Average latency = 38.2622
+Maximum latency = 240
+Average fragmentation = 1.51983
+Accepted packets = 0.558 at node 4 (avg = 0.598688)
+latency change    = 0.285233
+throughput change = 0.0215054
+completed warm up phase: 1
+Iteration  1 over
+++++++++++++++++++++++++++++++++++++++
+0
+simulation in Phase: Itertaion :2
+Minimum latency = 4
+Average latency = 45.5948
+Maximum latency = 322
+Average fragmentation = 1.52485
+Accepted packets = 0.548 at node 4 (avg = 0.603146)
+latency change    = 0.160822
+throughput change = 0.0073918
+completed warm up phase: 2
+Warmed up ...Time used is 3000 cycles
+Iteration  2 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :3
+Minimum latency = 4
+Average latency = 74.8043
+Maximum latency = 414
+Average fragmentation = 1.5046
+Accepted packets = 0.486 at node 0 (avg = 0.602375)
+latency change    = 0.390479
+throughput change = 0.00127966
+completed one running phase
+flag converged == 0
+Iteration  3 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :4
+Minimum latency = 4
+Average latency = 87.7745
+Maximum latency = 495
+Average fragmentation = 1.489
+Accepted packets = 0.548 at node 0 (avg = 0.601156)
+latency change    = 0.147766
+throughput change = 0.00202734
+completed one running phase
+flag converged == 0
+Iteration  4 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :5
+Minimum latency = 4
+Average latency = 101.128
+Maximum latency = 686
+Average fragmentation = 1.49684
+Accepted packets = 0.544667 at node 0 (avg = 0.601562)
+latency change    = 0.132047
+throughput change = 0.000675325
+completed one running phase
+flag converged == 0
+Iteration  5 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :6
+Minimum latency = 4
+Average latency = 115.953
+Maximum latency = 864
+Average fragmentation = 1.51801
+Accepted packets = 0.55675 at node 0 (avg = 0.601766)
+latency change    = 0.127853
+throughput change = 0.000337548
+completed one running phase
+flag converged == 0
+Iteration  6 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :7
+Minimum latency = 4
+Average latency = 128.077
+Maximum latency = 866
+Average fragmentation = 1.52168
+Accepted packets = 0.5774 at node 0 (avg = 0.603925)
+latency change    = 0.0946622
+throughput change = 0.00357557
+completed one running phase
+flag converged == 0
+Iteration  7 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :8
+Minimum latency = 4
+Average latency = 138.77
+Maximum latency = 928
+Average fragmentation = 1.54035
+Accepted packets = 0.584 at node 0 (avg = 0.60601)
+latency change    = 0.0770515
+throughput change = 0.00344122
+completed one running phase
+flag converged == 0
+Iteration  8 over
+++++++++++++++++++++++++++++++++++++++
+1
+simulation in Phase: Itertaion :9
+Minimum latency = 4
+Average latency = 147.733
+Maximum latency = 967
+Average fragmentation = 1.54006
+Accepted packets = 0.577286 at node 0 (avg = 0.606964)
+latency change    = 0.0606721
+throughput change = 0.00157154
+completed one running phase
+flag converged == 0
+Iteration  9 over
+#@#@#@#@#  Entered Draining stage @#@#@#@#@#@
+flag converged == 1
+Draining all recorded packets ...
+pkts_out_stnd = 977
+Draining remaining packets ...
+Time taken is 11010 cycles
+====== Traffic class 0 ======
+counta = 37735
+countb = 9299
+countc = 9358
+countd = 5590
+Overall minimum latency = 4 (1 samples)
+Overall average latency = 161.33 (1 samples)
+Overall maximum latency = 978 (1 samples)
+Overall minimum transaction latency = 4 (1 samples)
+Overall average transaction latency = 161.33 (1 samples)
+Overall maximum transaction latency = 978 (1 samples)
+Overall minimum fragmentation = 0 (1 samples)
+Overall average fragmentation = 1.54424 (1 samples)
+Overall maximum fragmentation = 40 (1 samples)
+Overall average accepted rate = 0.606964 (1 samples)
+Overall min accepted rate = 0.577286 (1 samples)
+Slowest flit = 106398
+Average hops = 3.49296 (40427 samples)
+Total run time 2.32447
+channel utilization
+**********************
+num of non-empty channels- 48
+Totalflits- 267247
+Avg-flits- 5567.65
+total flit deviation- 36422.8
+avg flit deviation- 758.808
+LUF= 7.33736
+

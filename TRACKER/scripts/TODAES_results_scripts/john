@@ -1,0 +1,23 @@
+make
+clear
+echo "Overall average latency-uniform\n"
+./booksim examples/mesh44 traffic=uniform injection_rate=0.14
+./booksim examples/mesh44 traffic=uniform injection_rate=0.15
+./booksim examples/mesh44 traffic=uniform injection_rate=0.16
+./booksim examples/mesh44 traffic=uniform injection_rate=0.17
+./booksim examples/mesh44 traffic=uniform injection_rate=0.18
+echo "Overall average latency -transpose\n";
+./booksim examples/mesh44 traffic=transpose injection_rate=0.11
+./booksim examples/mesh44 traffic=transpose injection_rate=0.12
+./booksim examples/mesh44 traffic=transpose injection_rate=0.13
+./booksim examples/mesh44 traffic=transpose injection_rate=0.14
+./booksim examples/mesh44 traffic=transpose injection_rate=0.15
+echo "Overall average latency -tornado\n";
+./booksim examples/mesh44 traffic=tornado injection_rate=0.12
+./booksim examples/mesh44 traffic=tornado injection_rate=0.13
+./booksim examples/mesh44 traffic=tornado injection_rate=0.14
+./booksim examples/mesh44 traffic=tornado injection_rate=0.15
+./booksim examples/mesh44 traffic=tornado injection_rate=0.16
+./booksim examples/mesh44 traffic=tornado injection_rate=0.17
+
+

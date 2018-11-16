@@ -1,0 +1,62 @@
+echo "Overall average latency -uniform\n";
+./booksim examples/mesh44 traffic=uniform injection_rate=0.46
+./booksim examples/mesh44 traffic=uniform injection_rate=0.48
+./booksim examples/mesh44 traffic=uniform injection_rate=0.5
+./booksim examples/mesh44 traffic=uniform injection_rate=0.51
+./booksim examples/mesh44 traffic=uniform injection_rate=0.52
+./booksim examples/mesh44 traffic=uniform injection_rate=0.53
+./booksim examples/mesh44 traffic=uniform injection_rate=0.54
+./booksim examples/mesh44 traffic=uniform injection_rate=0.55
+echo "Overall average latency -transpose\n";
+./booksim examples/mesh44 traffic=transpose injection_rate=0.4
+./booksim examples/mesh44 traffic=transpose injection_rate=0.41
+./booksim examples/mesh44 traffic=transpose injection_rate=0.42
+./booksim examples/mesh44 traffic=transpose injection_rate=0.43
+./booksim examples/mesh44 traffic=transpose injection_rate=0.44
+./booksim examples/mesh44 traffic=transpose injection_rate=0.45
+./booksim examples/mesh44 traffic=transpose injection_rate=0.46
+./booksim examples/mesh44 traffic=transpose injection_rate=0.47
+echo "Overall average latency -tornado\n";
+./booksim examples/mesh44 traffic=tornado injection_rate=0.42
+./booksim examples/mesh44 traffic=tornado injection_rate=0.44
+./booksim examples/mesh44 traffic=tornado injection_rate=0.46
+./booksim examples/mesh44 traffic=tornado injection_rate=0.48
+./booksim examples/mesh44 traffic=tornado injection_rate=0.5
+./booksim examples/mesh44 traffic=tornado injection_rate=0.51
+./booksim examples/mesh44 traffic=tornado injection_rate=0.52
+./booksim examples/mesh44 traffic=tornado injection_rate=0.53
+./booksim examples/mesh44 traffic=tornado injection_rate=0.54
+./booksim examples/mesh44 traffic=tornado injection_rate=0.55
+echo "Overall average latency -bitcomp\n";
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.18
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.19
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.20
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.21
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.22
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.23
+./booksim examples/mesh44 traffic=bitcomp injection_rate=0.24
+echo "Overall average latency-bitrev\n";
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.39
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.4
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.41
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.42
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.43
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.44
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.45
+./booksim examples/mesh44 traffic=bitrev injection_rate=0.46
+echo "Overall average latency-shuffle\n";
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.46
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.48
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.5
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.51
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.52
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.53
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.54
+./booksim examples/mesh44 traffic=shuffle injection_rate=0.55
+echo "Overall average latency-END\n";
+
+
+
+
+
+

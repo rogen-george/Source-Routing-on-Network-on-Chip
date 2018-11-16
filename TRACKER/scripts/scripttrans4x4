@@ -1,0 +1,9 @@
+./booksim examples/mesh44 traffic=transpose injection_rate=0.4
+./booksim examples/mesh44 traffic=transpose injection_rate=0.41
+./booksim examples/mesh44 traffic=transpose injection_rate=0.42
+./booksim examples/mesh44 traffic=transpose injection_rate=0.43
+./booksim examples/mesh44 traffic=transpose injection_rate=0.44
+./booksim examples/mesh44 traffic=transpose injection_rate=0.45
+./booksim examples/mesh44 traffic=transpose injection_rate=0.46
+./booksim examples/mesh44 traffic=transpose injection_rate=0.47
+
